@@ -1,0 +1,6 @@
+# Python
+*.py[cod]
+
+# ArcGIS
+*.prj
+log

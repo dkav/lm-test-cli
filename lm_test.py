@@ -7,6 +7,7 @@ Assumes Linkage Mapper scripts and test data are in their default folders.
 """
 
 import os
+import sys
 
 import lm_path
 import lm_master
@@ -18,13 +19,13 @@ def create_dir(in_dir):
         os.makedirs(in_dir)
 
 
-def in_params(test_dir):
+def in_params(test_dir, run_dir):
     """Define input paramaters."""
     gp_blank = '#'  # Geoprocessing's empty parameter value
 
     prj_dir = os.path.join(test_dir,  # Folder containing tests
                            'lm_output',  # Container folder to hold model run
-                           'lm_test')  # Linkage Mapper model run folder
+                           run_dir)  # Linkage Mapper model run folder
     create_dir(prj_dir)
 
     return (
@@ -58,7 +59,12 @@ def in_params(test_dir):
 
 def main():
     """Run model."""
-    lm_master.lm_master(in_params(lm_path.TST_PATH))
+    if len(sys.argv) > 1:
+        run_dir = sys.argv[1]
+    else:
+        run_dir = 'lm_test'
+
+    lm_master.lm_master(in_params(lm_path.TST_PATH, run_dir))
 
 
 if __name__ == "__main__":

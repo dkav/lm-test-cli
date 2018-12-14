@@ -9,15 +9,12 @@ Assumes Linkage Mapper scripts and test data are in their default folders.
 import os
 
 import lm_path
+
 import barrier_master
 
 
-def in_params(test_dir):
+def in_params(prj_dir, test_dir):
     """Define input paramaters."""
-    prj_dir = os.path.join(test_dir,  # Folder containing tests
-                           'lm_output',  # Container folder to hold model run
-                           'lm_test')  # Linkage Mapper model run folder
-
     return (
         [os.path.basename(__file__),  # Script Name ** Do not modify **
          prj_dir,  # Project Directory (1)
@@ -34,7 +31,7 @@ def in_params(test_dir):
 
 def main():
     """Run model."""
-    barrier_master.bar_master(in_params((lm_path.TST_PATH)))
+    barrier_master.bar_master(in_params(*lm_path.dir_paths()))
 
 
 if __name__ == "__main__":

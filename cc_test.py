@@ -9,22 +9,12 @@ Assumes Linkage Mapper scripts and test data are in their default folders.
 import os
 
 import lm_path
+
 import cc_main
 
 
-def create_dir(in_dir):
-    """Create directory if doesn't exist."""
-    if not os.path.exists(in_dir):
-        os.makedirs(in_dir)
-
-
-def in_params(test_dir):
+def in_params(prj_dir, test_dir):
     """Define input paramaters."""
-    prj_dir = os.path.join(test_dir,  # Folder containing tests
-                           'lm_output',  # Container folder to hold model run
-                           'cc_test')  # Climate Linkage Mapper model run folder
-    create_dir(prj_dir)
-
     return (
         [os.path.basename(__file__),  # Script Name ** Do not modify **
          prj_dir,  # Project Folder (1)
@@ -49,7 +39,7 @@ def in_params(test_dir):
 
 def main():
     """Run model."""
-    cc_main.main(in_params(lm_path.TST_PATH))
+    cc_main.main(in_params(*lm_path.dir_paths()))
 
 
 if __name__ == "__main__":

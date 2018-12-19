@@ -1,16 +1,14 @@
 #!/usr/bin/env python2
 
-"""Script to run Linkage Pathways Tool.
+"""Script to run Linkage Pathways Tool Version 2.
 
 Assumes Linkage Mapper scripts and test data are in their default folders.
-
 """
 
 import os
 
-import lm_path
-
-import lm_master
+import lm_model
+import lm_proj
 
 
 def in_params(prj_dir, test_dir):
@@ -30,8 +28,8 @@ def in_params(prj_dir, test_dir):
          "true",  # Step 3 - Calculate CWD and LCP (9)
          "true",  # Drop Corridors that Intersect Core Areas (10)
          "true",  # Step 4 - Prune Network (11)
-         4,  # Option A - Maxium Number of Connected NN (12)
-         "Cost-Weighted",  # Option B - NN Measurement Unit (13)
+         1,  # Option A - Maxium Number of Connected NN (12)
+         "Euclidean",  # Option B - NN Measurement Unit (13)
          "true",  # Option C - Connect NC (14)
          "true",  # Step 5 - Calculate, Normalize and Mosaic Corridors (15)
          "true",  # Truncate Corridors (16)
@@ -46,7 +44,7 @@ def in_params(prj_dir, test_dir):
 
 def main():
     """Run model."""
-    lm_master.lm_master(in_params(*lm_path.dir_paths()))
+    lm_model.lm_run(in_params(*lm_model.lm_dirs(lm_proj.proj_name())))
 
 
 if __name__ == "__main__":

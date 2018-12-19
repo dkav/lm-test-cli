@@ -9,6 +9,7 @@ Assumes Linkage Mapper scripts and test data are in their default folders.
 import os
 
 import lm_path
+import lm_proj
 
 import circuitscape_master
 
@@ -26,7 +27,8 @@ def in_params(prj_dir, test_dir):
 
 def main():
     """Run model."""
-    circuitscape_master.circuitscape_master(in_params(*lm_path.dir_paths()))
+    circuitscape_master.circuitscape_master(
+        in_params(*lm_path.dir_paths(lm_proj.proj_name())))
 
 
 if __name__ == "__main__":

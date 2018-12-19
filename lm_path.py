@@ -13,18 +13,13 @@ TST_PATH = (os.path.abspath(
 sys.path.append(os.path.join(TST_PATH, LM_PATH))
 
 
-def create_prj_dir(test_dir, run_dir):
-    """Create project directory if doesn't exist."""
-    prj_dir = os.path.join(test_dir,  # Folder containing tests
-                           'lm_output',  # Container folder to hold model run
-                           run_dir)  # Linkage Mapper model run folder
-
-    if not os.path.exists(prj_dir):
-        os.makedirs(prj_dir)
-
-    return prj_dir
+def prj_dir_path(run_dir):
+    """Get project directory path."""
+    return os.path.join(TST_PATH,  # Folder containing tests
+                        'lm_output',  # Container folder to hold model run
+                        run_dir)  # Linkage Mapper model run folder
 
 
-def dir_paths():
+def dir_paths(run_dir):
     """Provide folder inputs."""
-    return create_prj_dir(TST_PATH, sys.argv[1]), TST_PATH
+    return prj_dir_path(run_dir), TST_PATH

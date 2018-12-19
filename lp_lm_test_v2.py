@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 
-"""Script to run Linkage Pathways Tool.
+"""Script to run Linkage Priority tool.
 
 Assumes Linkage Mapper scripts and test data are in their default folders.
 
@@ -8,9 +8,8 @@ Assumes Linkage Mapper scripts and test data are in their default folders.
 
 import os
 
-import lm_path
-
-import lm_master
+import lm_model
+import lm_proj
 
 
 def in_params(prj_dir, test_dir):
@@ -48,7 +47,7 @@ def in_params(prj_dir, test_dir):
 
 def main():
     """Run model."""
-    lm_master.lm_master(in_params(*lm_path.dir_paths()))
+    lm_model.lm_run(in_params(*lm_model.lm_dirs(lm_proj.proj_name())))
 
 
 if __name__ == "__main__":

@@ -21,7 +21,7 @@ def in_params(prj_dir, test_dir):
          prj_dir,  # Project Folder (1)
          os.path.join(test_dir,
                       'lm_inputs\\cc_cores.shp'),  # Core Area Polygons (2)
-         "HCA_ID",  # Core Area Field Name (3)
+         "core_id",  # Core Area Field Name (3)
          os.path.join(test_dir,
                       'lm_inputs\\cc_climate.img'),  # Climate Raster (4)
          os.path.join(test_dir,

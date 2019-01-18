@@ -58,7 +58,7 @@ def in_params(prj_dir, test_dir):
          0.25,  # Core Area Value Weight in CSP Calculation (30)
          0,  # Expert Corridor Importance Value Weight in CSP Calculation (31)
          0.25,  # Climate Envelope Difference Weight in CSP Calculation (32)
-         "#",  # CSP Threashold Value (33)
+         0.6,  # CSP Threashold Value (33)
          0.5,  # Truncated Corridors Weight in Blended Priority Calc (34)
          0.5,  # Linkage Priority Weight in Blended Priority Calculation (35)
          "#",  # Output for ModelBuilder Precondition (36)

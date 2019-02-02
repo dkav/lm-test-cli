@@ -1,0 +1,1 @@
+G:\lm-repo\toolbox\scripts\cc_main.py "G:\lm_testing\lm_output\cc_test" "G:\lm_testing\lm_inputs\cc_cores.shp" "core_id" "G:\lm_testing\lm_inputs\cc_climate.img" "#" "C:\Program Files\GRASS GIS 7.4.1" 1000 50000 1 50000 "false" 4 "Cost-Weighted" "true"

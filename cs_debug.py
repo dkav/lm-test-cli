@@ -1,5 +1,7 @@
 # Code snippet for debugging Circuitscape.
 
+# pyamg==3.3.2 needs to be installed
+
 # Replace following line:
 # lu.call_circuitscape(cfg.CSPATH, outConfigFile)
 

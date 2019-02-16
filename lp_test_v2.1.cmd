@@ -1,0 +1,1 @@
+G:\lm-repo\toolbox\scripts\lp_main.py  "G:\lm_testing\lm_output\lmtest" "G:\lm_testing\lm_inputs\LP_Demo_Modoc.gdb\cores" "core_id" "G:\lm_testing\lm_inputs\LP_Demo_Modoc.gdb\resistance_modoc" "#" 0.33 0.33 0.34 0 0 0 "#" "#" "#" "#" "#" "false" "#" 0.75 1.25 1 1 0.33 1 0.5 1.25 0.67 0.33 0.33 0.34 0 0 "#" 0.5 0.5 "#" "#"

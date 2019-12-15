@@ -5,8 +5,8 @@ import os
 import sys
 
 
-LM_PATH = '..\\..\\lm-repo\\toolbox\\scripts'
-# LM_PATH = '..\\..\\lm-fork\\toolbox\\scripts'
+#LM_PATH = '..\\..\\lm-repo\\toolbox\\scripts'
+LM_PATH = '..\\..\\lm-fork\\toolbox\\scripts'
 
 
 TST_PATH = (os.path.abspath(

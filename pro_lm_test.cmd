@@ -1,1 +1,0 @@
-propy G:\lm_testing\lm-test-cli\lm_test_v2.py lmtest

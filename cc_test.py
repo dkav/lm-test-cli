@@ -26,7 +26,7 @@ def in_params(prj_dir, test_dir):
                       'lm_inputs\\cc_climate.img'),  # Climate Raster (4)
          os.path.join(test_dir,
                       'lm_inputs\\cc_resist.img'),  # Resistance Raster (5)
-         "C:\\Program Files\\GRASS GIS 7.4.1",  # GRASS GIS Folder (6)
+         "C:\\Program Files\\GRASS GIS 7.8",  # GRASS GIS Folder (6)
          2000,  # Minium Distance Between Core Pairs (7)
          50000,  # Maxium Distance Between Core Pairs (8)
          1,  # Climate Threashold (9)

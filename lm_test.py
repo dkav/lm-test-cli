@@ -1,5 +1,3 @@
-#!/usr/bin/env python2
-
 """Script to run Linkage Pathways Tool Version 2.
 
 Assumes Linkage Mapper scripts and test data are in their default folders.

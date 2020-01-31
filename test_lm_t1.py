@@ -1,4 +1,4 @@
-"""Script to run Linkage Pathways Tool Version 2.
+"""Script to run Linkage Pathways Tool.
 
 Assumes Linkage Mapper scripts and test data are in their default folders.
 """

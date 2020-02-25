@@ -5,8 +5,10 @@ Assumes Linkage Mapper scripts and test data are in their default folders.
 
 import os
 
-import lm_model
 import lm_proj
+import lm_prj_dir
+
+import lm_master
 
 
 def in_params(prj_dir, test_dir):
@@ -42,7 +44,7 @@ def in_params(prj_dir, test_dir):
 
 def main():
     """Run model."""
-    lm_model.lm_run(in_params(*lm_model.lm_dirs(lm_proj.proj_name())))
+    lm_master.lm_master(in_params(*lm_prj_dir.lm_dirs(lm_proj.proj_name())))
 
 
 if __name__ == "__main__":

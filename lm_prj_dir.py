@@ -1,15 +1,8 @@
-"""Create project folder for Linkage Mapper model runs."""
+"""Module to get Linkage Mapper model run directories."""
 
 import os
 
 import lm_path
-
-import lm_master
-
-
-def lm_run(params):
-    """Run Linkage Mappper with provided paramaters."""
-    lm_master.lm_master(params)
 
 
 def create_prj_dir(run_dir):

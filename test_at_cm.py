@@ -18,7 +18,7 @@ def in_params(prj_dir, test_dir):
         [os.path.basename(__file__),  # Script Name ** Do not modify **
          prj_dir,  # Project Directory (1)
          os.path.join(test_dir,
-                      'lm_inputs\\cores.shp'),  # Core Area Feature Class (2)
+                      'lm-inputs\\cores.shp'),  # Core Area Feature Class (2)
          "core_ID"]  # Core Area Field Name (3)
         )
 

@@ -18,7 +18,7 @@ def in_params(prj_dir, test_dir):
          False,  # restore_max_roi (1)
          1,  # restored_resistance_val (2)
          os.path.join(test_dir,
-                      "lm_inputs\\iter_barr.gdb"),  # restoration_data_gdb (3)
+                      "lm-inputs\\iter_barr.gdb"),  # restoration_data_gdb (3)
          prj_dir,  # output_dir (4)
          "URWA_resis",  # resistance_ras (5)
          'URWA_HCAs_Doug_Grant',  # core_fc (6)

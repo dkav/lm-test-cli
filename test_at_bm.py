@@ -18,7 +18,7 @@ def in_params(prj_dir, test_dir):
         [os.path.basename(__file__),  # Script Name ** Do not modify **
          prj_dir,  # Project Directory (1)
          os.path.join(test_dir,
-                      'lm_inputs\\resistances'),  # Resistance Raster (2)
+                      'lm-inputs\\resistances'),  # Resistance Raster (2)
          400,  # Minimum Detection Radius (3)
          1200,  # Maximum Detection Radius (4)
          400,  # Radius Step Value (5)

@@ -18,11 +18,11 @@ def in_params(prj_dir, test_dir):
         [os.path.basename(__file__),  # Script Name ** Do not modify **
          prj_dir,  # Project Directory (1)
          os.path.join(test_dir,
-                      'lm_inputs\\lp_demo_modoc.gdb'
+                      'lm-inputs\\lp_demo_modoc.gdb'
                       '\\cores'),  # Core Area Feature Class (2)
          "core_ID",  # Core Area Field Name (3)
          os.path.join(test_dir,
-                      'lm_inputs\\lp_demo_modoc.gdb'
+                      'lm-inputs\\lp_demo_modoc.gdb'
                       '\\resistance_modoc'),  # Resistance Raster (4)
          "true",  # Step 1 - Identify Adjacent Core Areas (5)
          "true",  # Step 2 - Construct a Network of Core Areas (6)

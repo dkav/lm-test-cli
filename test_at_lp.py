@@ -18,11 +18,11 @@ def in_params(prj_dir, test_dir):
         [os.path.basename(__file__),  # Script Name ** Do not modify **
          prj_dir,  # Project Directory (1)
          os.path.join(test_dir,
-                      'lm_inputs\\lp_demo_modoc.gdb'
+                      'lm-inputs\\lp_demo_modoc.gdb'
                       '\\cores'),  # Core Area Feature Class (2)
          "core_ID",  # Core Area Field Name (3)
          os.path.join(test_dir,
-                      'lm_inputs\\lp_demo_modoc.gdb'
+                      'lm-inputs\\lp_demo_modoc.gdb'
                       '\\resistance_modoc'),  # Resistance Raster (4)
          "#",  # Other Core Area Value Raster (5)
          0.33,  # Resistance Weight in CAV Calculation (6)
@@ -36,11 +36,11 @@ def in_params(prj_dir, test_dir):
          "#",  # To Core Field (14)
          "#",  # Expert Corridor Importance Value Field (15)
          os.path.join(test_dir,  # Current Climate Signature Raster (16)
-                      'lm_inputs\\lp_demo_modoc.gdb'
+                      'lm-inputs\\lp_demo_modoc.gdb'
                       '\\climate_signature_current'),
          "true",  # Modify the Advanced Climate Signature Parameters? (17)
          os.path.join(test_dir,  # Future Climate Signature Raster (18)
-                      'lm_inputs\\lp_demo_modoc.gdb'
+                      'lm-inputs\\lp_demo_modoc.gdb'
                       '\\climate_signature_future'),
          0.5,  # Relative Priority of Minimum Climate Analog Ratio (19)
          0,  # Relative Priority of Maximum Climate Analog Ratio (20)

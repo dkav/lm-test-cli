@@ -18,12 +18,12 @@ def in_params(prj_dir, test_dir):
         [os.path.basename(__file__),  # Script Name ** Do not modify **
          prj_dir,  # Project Folder (1)
          os.path.join(test_dir,
-                      'lm_inputs\\cc_cores.shp'),  # Core Area Polygons (2)
+                      'lm-inputs\\cc_cores.shp'),  # Core Area Polygons (2)
          "core_id",  # Core Area Field Name (3)
          os.path.join(test_dir,
-                      'lm_inputs\\cc_climate.img'),  # Climate Raster (4)
+                      'lm-inputs\\cc_climate.img'),  # Climate Raster (4)
          os.path.join(test_dir,
-                      'lm_inputs\\cc_resist.img'),  # Resistance Raster (5)
+                      'lm-inputs\\cc_resist.img'),  # Resistance Raster (5)
          "C:\\Program Files\\GRASS GIS 7.8",  # GRASS GIS Folder (6)
          2000,  # Minium Distance Between Core Pairs (7)
          50000,  # Maxium Distance Between Core Pairs (8)

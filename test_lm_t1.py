@@ -17,10 +17,10 @@ def in_params(prj_dir, test_dir):
         [os.path.basename(__file__),  # Script Name ** Do not modify **
          prj_dir,  # Project Directory (1)
          os.path.join(test_dir,
-                      'lm_inputs\\cores.shp'),  # Core Area Feature Class (2)
+                      'lm-inputs\\cores.shp'),  # Core Area Feature Class (2)
          "core_ID",  # Core Area Field Name (3)
          os.path.join(test_dir,
-                      'lm_inputs\\resistances'),  # Resistance Raster (4)
+                      'lm-inputs\\resistances'),  # Resistance Raster (4)
          "true",  # Step 1 - Identify Adjacent Core Areas (5)
          "true",  # Step 2 - Construct a Network of Core Areas (6)
          "Cost-Weighted & Euclidean",  # Network Adjacency Method (7)

@@ -21,7 +21,7 @@ def in_params(prj_dir, test_dir):
          "Mean",  # Aggregation Method (3)
          "True",  # Smooth Input (4)
          os.path.join(test_dir,
-                      'lm_inputs\\resistances'),  # Resistance Raster (5)
+                      'lm-inputs\\resistances'),  # Resistance Raster (5)
          "#", "#", "#", "#"]  # Resistance Rasters 2-5 (6-10)
         )
 

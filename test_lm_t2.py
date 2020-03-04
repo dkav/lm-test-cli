@@ -1,7 +1,6 @@
 """Script to run Linkage Pathways tool (scenario 2).
 
 Assumes Linkage Mapper scripts and test data are in their default folders.
-
 """
 
 import os
